@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  dauthenticator:
+    image: gianksp/dauthenticator
+    env_file:
+      - .env
+    build:
+      context: ./
+    volumes:
+      - ./:/opt/app
+    command: npm run start
+    ports:
+      - "3000:3000"
+    container_name: dauthenticator-docker
