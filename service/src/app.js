@@ -1,9 +1,11 @@
+import https from 'https';
 import { authenticator } from 'otplib';
 import express from 'express';
 import bodyParser from 'body-parser';
 import * as PushAPI from "@pushprotocol/restapi";
 import { ethers } from 'ethers';
 import dotenv from 'dotenv';
+import * as fs from 'fs';
 
 dotenv.config();
 var app = express();
@@ -84,4 +86,8 @@ app.post("/generate", async (req, res, next) => {
     }
 });
 
-app.listen(3000, () =>   console.log('Server running on port 3000'));
+// app.listen(3000, () =>   console.log('Server running on port 3000'));
+https.createServer({
+  key: fs.readFileSync("privateKey.key"),
+  cert: fs.readFileSync("certificate.crt")
+}, app).listen(4000, () => console.log('Server running on port 4000'))
