@@ -10,5 +10,6 @@ services:
       - ./:/opt/app
     command: npm run start
     ports:
-      - "3000:3000"
+      - "3000:80"
+    network_mode: 'host'
     container_name: dauthenticator-docker
