@@ -10,6 +10,6 @@ services:
       - ./:/opt/app
     command: npm run start
     ports:
-      - "80:4000"
+      - "4000:4000"
     container_name: dauthenticator-docker
     restart: always
