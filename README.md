@@ -1,4 +1,4 @@
-[![N|Solid](https://i.ibb.co/yVw1R9M/Placeholder.png)](https://dauthenticator.com)
+[![How it works](https://i.ibb.co/xqtzzYj/Screenshot-2023-06-16-205708.png)](https://youtu.be/YEumS-C21PM "How it works")
 # Dauthenticator
 ### _A decentralized alternative to Google Authenticator App_
 
