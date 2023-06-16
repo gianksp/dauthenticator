@@ -21,7 +21,7 @@ contract Dauthenticator {
     function compare(string memory str1, string memory str2) public pure returns (bool) {
         return keccak256(abi.encodePacked(str1)) == keccak256(abi.encodePacked(str2));
     }
-
+    
     function add(string memory key, string memory secret) public {
         if (otp_keys[msg.sender].length == 0) {
             uint256 _tableId = TablelandDeployments.get().create(
