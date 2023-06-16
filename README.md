@@ -4,9 +4,8 @@
 
 Welcome to [Dauthenticator](https://dauthenticator.com), the decentralized TOTP solution that provides secure and flexible authentication for your digital world. A [HackFS2023](https://www.ethglobal.com/showcase/dauthenticator-5w4mw) Project by [Giancarlo](https://twitter.com/gianksp).
 
-- Type some Markdown on the left
-- See HTML in the right
-- ✨Magic ✨
+- Add codes stored on-chain encrypted ✨
+- Generate TOTP and receive them via push notifications on the browswer✨
 
 ## Architecture
 
